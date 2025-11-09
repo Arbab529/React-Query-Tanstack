@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.btn {
+  @apply bg-orange-700 hover:bg-orange-800 text-white  text-[1rem] py-[.2rem] px-[1rem] rounded cursor-pointer;
+}
+
+.lightbtn {
+  @apply bg-transparent  text-white border border-white text-[1rem] py-[.2rem] px-[1rem] rounded cursor-pointer;
+}
+
+.btn:disabled {
+  @apply opacity-40 cursor-not-allowed;
+}
